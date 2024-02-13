@@ -116,7 +116,7 @@ def start(video, botChoice):
     option.add_experimental_option('excludeSwitches', ['enable-logging'])
     
     try:
-        service = Service(executable_path="C:\\Users\\YOUR\\PATH\\HERE\\chromedriver.exe")
+        service = Service(executable_path="C:\Users\alexi\Downloads\chromedriver_win32.zip")
         driver = webdriver.Chrome(service=service, options=option)
     except Exception as DriverError:
         print(f"{color('>', 'red')} {Fore.LIGHTRED_EX}Error: {DriverError}")
